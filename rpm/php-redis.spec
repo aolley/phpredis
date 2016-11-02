@@ -60,5 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Nov 02 2016 Adam Olley <adam.olley@blackboard.com> - 3.0.0netspot1
+- The following changes are from the upstream repos github.com/phpredis/phpredis
+  php7 branch.
 - Supports clusters with a single master
 - Fixes a memory leak in RedisCluster that occured on all reads.
