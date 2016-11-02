@@ -26,7 +26,11 @@ Vagrant.configure(2) do |cfg|
         end
 
         config.vm.provision "shell",
-          inline: "/bin/sh /vagrant/provision.sh"
+          inline: "/bin/sh /vagrant/provision_pre.sh"
+
+        config.vm.provision "shell",
+          inline: "/bin/sh /vagrant/provision_post.sh",
+          privileged: false
       end
     end
 end
