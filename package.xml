@@ -119,6 +119,25 @@ http://pear.php.net/dtd/package-2.0.xsd">
  <changelog>
    <release>
    <stability><release>stable</release><api>stable</api></stability>
+   <version><release>3.0.0netspot1</release><api>3.0.0netspot1</api></version>
+   <date>2016-11-02</date>
+   <notes>
+      phpredis 3.0.0netspot1
+
+      Based off of the phpredis/php7 branch.
+
+      -- Improvements --
+
+      * Supports clusters with a single master
+
+      -- Fixes --
+
+      * Fixes a memory leak in RedisCluster that occured on all reads.
+
+   </notes>
+   </release>
+   <release>
+   <stability><release>stable</release><api>stable</api></stability>
    <version><release>3.0.0</release><api>3.0.0</api></version>
    <date>2016-06-03</date>
    <notes>

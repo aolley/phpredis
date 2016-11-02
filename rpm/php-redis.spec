@@ -56,3 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc CREDITS
 %config(noreplace) %{_sysconfdir}/php.d/%{ini_name}
 %{php_extdir}/redis.so
+
+%changelog
+* Wed Nov 02 2016 Adam Olley <adam.olley@blackboard.com> - 3.0.0netspot1
+- Supports clusters with a single master
+- Fixes a memory leak in RedisCluster that occured on all reads.
