@@ -1,4 +1,5 @@
 # Build Env
+rm -rf ~/rpmbuild
 mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 cd ~/rpmbuild/SOURCES
 wget http://github.com/aolley/phpredis/archive/php7ns.tar.gz
