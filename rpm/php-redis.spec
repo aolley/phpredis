@@ -24,6 +24,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  php-devel
 Requires:       php(zend-abi) = %{php_zend_api}
 Requires:       php(api) = %{php_apiver}
+Obsoletes:      php-pecl-redis <= 3.0.0
 
 %description
 The phpredis extension provides an API for communicating with the Redis key-value store.
